@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Phase 10</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="index.js" defer></script>
+    <script>
+      if (window.location.protocol != "https:")
+        window.location = "https://play.lavro.ru/phase10";
+    </script>
+  </head>
+
+  <body class="login cent">
+    <h1 class="visually-hidden">Phase 10 (Фаза 10)</h1>
+    <div id="err"></div>
+    <main class="container login">
+      <div id="enter">
+        <header class="container login__header">
+          <h2>Phase 10<span class="logo">online alt v0.0.1</span></h2>
+        </header>
+
+        <section class="signupqq">
+          <h3>Create an account</h3>
+          <span
+            >Already have an account?
+            <a class="t" id="menu_switcher">Sign in</a></span
+          >
+
+          <form name="rg1">
+            <div>
+              <label>Login</label>
+              <input type="text" maxlength="30" id="login" name="login" />
+            </div>
+            <div>
+              <label>Password</label>
+              <input type="password" maxlength="20" id="pw" name="pw" />
+            </div>
+          </form>
+          <a class="button" id="register_button">Sign up</a>
+        </section>
+        <section class="regqq hidden">
+          <h3>Login</h3>
+          <span
+            >Problems with login?
+            <a class="t" id="menu_switcher">Sign up</a></span
+          >
+
+          <form name="rg1">
+            <div>
+              <label>Login</label>
+              <input type="text" maxlength="30" id="loginl" name="loginl" />
+            </div>
+            <div>
+              <label>Password</label>
+              <input type="password" maxlength="20" id="pwl" name="pwl" />
+            </div>
+          </form>
+          <a class="button" id="login_button">Continue</a>
+        </section>
+      </div>
+      <div id="cont"></div>
+      <section class="gamecreateqq hidden">
+        <span class="heading">New Game</span>
+        <span>Select number of players</span>
+        <form name="pnum" class="plnum">
+          <input type="radio" value="2" name="radio" id="radio2" />
+          <label class="plnumchild" for="radio2">2</label>
+
+          <input type="radio" value="3" name="radio" id="radio3" />
+          <label class="plnumchild" for="radio3">3</label>
+
+          <input type="radio" value="4" name="radio" id="radio4" />
+          <label class="plnumchild" for="radio4">4</label>
+
+          <input type="radio" value="5" name="radio" id="radio5" />
+          <label class="plnumchild" for="radio5">5</label>
+
+          <input type="radio" value="6" name="radio" id="radio6" />
+          <label class="plnumchild" for="radio6">6</label>
+        </form>
+        <a class="button" id="create_game_button">Continue</a>
+      </section>
+      <section id="current-game">
+        <!-- <div class="card" data-id="card-1">
+          <input type="checkbox" class="card__input" id="card-1">
+          <label for="card-1" class="card__label">10</label>
+        </div> -->
+      </section>
+    </main>
+  </body>
+</html>
